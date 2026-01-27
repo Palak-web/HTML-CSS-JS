@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tables Practice</title>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+        h2{
+            background-color: rgb(96, 96, 236);
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>HTML Tables Practice</h1>
+    <hr>
+
+    <h2>Student Marksheet</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Total</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Rahul Sharma</td>
+                <td>85</td>
+                <td>90</td>
+                <td>78</td>
+                <td>253</td>
+                <td>84.33%</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Priya Singh</td>
+                <td>92</td>
+                <td>88</td>
+                <td>95</td>
+                <td>275</td>
+                <td>91.67%</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Amit Kumar</td>
+                <td>78</td>
+                <td>82</td>
+                <td>80</td>
+                <td>240</td>
+                <td>80.00%</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Sneha Gupta</td>
+                <td>88</td>
+                <td>85</td>
+                <td>90</td>
+                <td>263</td>
+                <td>87.67%</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Vikash Yadav</td>
+                <td>75</td>
+                <td>70</td>
+                <td>72</td>
+                <td>217</td>
+                <td>72.33%</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Class Average</strong></td>
+                <td>83.6</td>
+                <td>83.0</td>
+                <td>83.0</td>
+                <td>249.6</td>
+                <td>83.20%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <hr>
+
+
+    <h2>Product Inventory Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="7">Product Inventory Management</th>
+            </tr>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Laptop</td>
+                <td rowspan="2">Electronics</td>
+                <td>45000</td>
+                <td>25</td>
+                <td>In Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>Mobile Phone</td>
+                <td>15000</td>
+                <td>8</td>
+                <td>Low Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td>T-Shirt</td>
+                <td rowspan="2">Clothing</td>
+                <td>500</td>
+                <td>50</td>
+                <td>In Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P004</td>
+                <td>Jeans</td>
+                <td>1200</td>
+                <td>5</td>
+                <td>Low Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P005</td>
+                <td>Novel Book</td>
+                <td rowspan="2">Books</td>
+                <td>300</td>
+                <td>100</td>
+                <td>In Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P006</td>
+                <td>Notebook</td>
+                <td>50</td>
+                <td>200</td>
+                <td>In Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P007</td>
+                <td>Headphones</td>
+                <td>Electronics</td>
+                <td>2000</td>
+                <td>15</td>
+                <td>In Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>P008</td>
+                <td>Water Bottle</td>
+                <td>Accessories</td>
+                <td>250</td>
+                <td>7</td>
+                <td>Low Stock</td>
+                <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <hr>
+
+    <h2>School Timetable</h2>
+    <table border="1">
+        <caption>Weekly Class Schedule - Class 10th</caption>
+        <thead>
+            <tr>
+                <th>Day/Time</th>
+                <th>9:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-1:00</th>
+                <th>1:00-2:00</th>
+                <th>2:00-3:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Science</td>
+                <td colspan="2">Lunch Break</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Hindi</td>
+                <td colspan="2">Lunch Break</td>
+                <td>PT</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>English</td>
+                <td>Geography</td>
+                <td>Math</td>
+                <td colspan="2">Lunch Break</td>
+                <td>Computer</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Hindi</td>
+                <td>Science</td>
+                <td>English</td>
+                <td colspan="2">Lunch Break</td>
+                <td>Art</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Math</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td colspan="2">Lunch Break</td>
+                <td>Music</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <hr>
+
+</body>
+</html>
