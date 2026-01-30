@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+            /* the specificity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+            /* the specificity of this selector is 10 */
+        .cred{
+            color: crimson;
+        }
+            /* the specificity of this selector is 10 */
+        .cpurple{
+            color: purple !important;
+        }
+            /* this is a emaple of attribute selector 10 */
+        [data-x=a]{
+            background-color: rgb(163, 163, 201); 
+            /* attribute selector */
+        }
+
+        /* the spece of this selector is 1 + 10 + 10 +10 +10 = 41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: darkgreen;
+        }
+        /* jo sabse baad me hota hai vo choose hota hai override if same selector hai to */
+        /* if complex speceficity aati hai to hum add karke nimkalte hai example h1(1) .cred (10) (10 + 1 = 11 so more specificity) */
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: blueviolet;" class="yellow cred cpurple" data-x="a">CSS Specifecity</h1>
+    </div>
+</body>
+</html>
