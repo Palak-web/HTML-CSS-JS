@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            margin: auto;
+            background-color: green;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            margin: 23px auto;
+            /* height: 40vh; */
+            min-height: 80vh;
+            font-size: 18px;
+            background-color: brown;
+        }
+        .container > div {
+            font-size: 1.5em;
+            border: 2px solid magenta;
+            width: 50%;
+        }
+        .container > div > div {
+            border: 2px solid rgb(68, 6, 68);
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            margin: 23px auto;
+            background-color: rgb(96, 255, 199);
+            color: rgb(58, 4, 13);
+            font-size: 22px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div
+     class="box">This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Accusamus nobis quo, 
+             ea voluptas eligendi exercitationem enim,
+              voluptatem, odit qui vel minima rem deleniti.
+               Voluptas cupiditate amet rerum qui accusantium 
+            porro, voluptate quasi velit maiores exercitationem! Placeat id labore quia nesciunt. Aliquid alias, cumque quidem corrupti commodi eveniet dolor iure dolorem 
+            necessitatibus ut neque, eius omnis atque.
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus illo exercitationem doloremque dolore corporis rerum amet illum laborum hic nesciunt recusandae iure, nobis beatae officia, tenetur architecto minima cupiditate debitis. Voluptatibus, vero ex.
+        </div>
+        </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</html>
