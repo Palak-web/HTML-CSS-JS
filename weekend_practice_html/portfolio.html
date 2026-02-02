@@ -5,13 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palak Verma - Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #ebccd1;
+
+        }
+        body{
+            background-color: #ebccd1;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 , h2{
+            border: 3px solid black;
+            text-align: center;
+            background-color: #c20b27;
+            color: white;
+            padding: 15px;
+            margin: 20px 0;
+            padding: 15px ;
+            border-radius: 8px;
+
+        }
+        h3{
+            background-color: rgba(4, 97, 117, 0.376);
+            border: 400px;
+            border: black solid 2px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        nav ul li{
+            background-color: rgb(7, 79, 95);
+            padding: 10px 15px;
+            border-radius: 5px;
+            list-style: none;
+        }
+        img{
+            border: black solid 4px ;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
+    </style>
 </head>
 
 <body>
+    <img src="palak.jpeg" alt="Palak Verma" width="180" height="280" >
+
     <!-- Header Section -->
     <header id="home">
         <h1>Palak Verma</h1>
-        <p>Web Developer | B.Voc Student</p>
+        <p><strong>Web Developer | B.Voc Student</strong></p>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -26,24 +89,29 @@
 
     <!-- About Me Section -->
     <section id="about">
+
         <h2>About Me</h2>
         <div>
-            <p>My name is Palak Verma.</p>
-            <p>I am currently pursuing B.Voc (Software Development) course.</p>
-            <p>This is my second year of this course at NPGC.</p>
-            <p>I am passionate about web development and learning new technologies every day!</p>
-        </div>
+          <p>Hello! I'm <strong>Palak Verma</strong>, a passionate and enthusiastic web developer currently pursuing <strong>B.Voc in Software Development</strong> at NPGC, Lucknow.</p>
+        
+        <p>I'm in my second year of the course and deeply interested in building creative and functional websites. Every day is a learning opportunity for me, and I love exploring new technologies and improving my coding skills.</p>
+        
+        <p>My goal is to become a skilled full-stack developer and create projects that make a real impact. I believe in continuous learning and staying updated with the latest web development trends.</p>
+        
+        <p>When I'm not coding, you'll find me drawing, listening to music, or learning something new!</p>
+
+    </div>
 
         <h3>Hobbies and Interests</h3>
-        <ol>
+        <ul>
             <li>Drawing</li>
-            <li>Coding</li>
-            <li>Listening to Music</li>
-            <li>Traveling</li>
             <li>Dancing</li>
-            <li>Learning English</li>
-        </ol>
-        <img src="palak.jpeg" alt="Palak Verma" width="200">
+            <li>Coding and Building projects</li>
+            <li>Listening to Music</li>
+            <li>Traveling and Exploring new Places</li>
+            <li>Learning Communicating in English</li>
+        </ul>
+
     </section>
     <hr>
 
@@ -56,6 +124,7 @@
             <li><strong>Python</strong></li>
             <li><strong>Git/GitHub</strong></li>
             <li><strong>Responsive Design</strong></li>
+            <li><strong>Database MySQL</strong></li>
         </ul>
     </section>
     <hr>
@@ -64,7 +133,7 @@
     <section id="education">
         <h2>Educational Qualification</h2>
         <table border="1">
-            <caption><strong>My Education Journey</strong></caption>
+            <caption><strong style="background-color: rgba(4, 97, 117, 0.376); border: black solid 1px;">My Education Journey</strong></caption>
             <thead>
                 <tr>
                     <th>Degree</th>
@@ -113,7 +182,7 @@
         <!-- Social Media Links -->
         <div>
             <h3>Connect With Me</h3>
-            <p>
+            <p class="Social">
                 <a href="https://github.com/Palak-web" target="_blank">GitHub</a> | 
                 <a href="https://www.linkedin.com/in/palakvermadev" target="_blank">LinkedIn</a>
             </p>
@@ -163,7 +232,7 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Palak Verma. All Rights Reserved.</p>
-        <p>Made with ❤️ using HTML</p>
+        <p>Made with ❤️ using HTML little bit CSS</p>
     </footer>
 
 </body>
