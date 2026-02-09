@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar designing</title>
+    <style>
+        * {
+            margin: 3px;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(104, 178, 234);
+        }
+
+        :root {
+            --color-home: #3498db;
+            --color-about: green;
+            --color-contact: red;
+            --color-review: pink;
+            --color-hover: rgb(1, 3, 1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            padding: 5px;
+            color: var(--color-about);
+            color: rgb(104, 178, 234);
+            background-color: rgb(5, 5, 57);
+            border: black solid 2px;
+            border-radius: 6px;
+        }
+
+        .container {
+            text-align: center;
+            border: black solid 2px;
+            width: 200px;
+            margin: 20px auto;
+            font-size: large;
+            border-radius: 6px;
+            background-color: rgba(102, 102, 244, 0.639);
+
+        }
+
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .container ul li a:hover {
+            color: red;
+            color: var(--color-hover);
+        }
+
+        h2 {
+            text-align: center;
+            padding: 5px;
+            color: var(--color-about);
+            color: rgb(104, 178, 234);
+            background-color: rgb(41, 41, 118);
+            border: black solid 2px;
+            border-radius: 6px;
+        }
+
+        h3 {
+            border: black solid 1px;
+            width: 250px;
+            padding: 6px;
+            border-radius: 6px;
+            background-color: rgba(102, 102, 244, 0.639);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to our webs</h1>
+    <br>
+    <nav class="container">
+        <ul>
+            <li><a href="#home">Home Page</a></li>
+            <br>
+            <li><a href="#about">About Page</a></li>
+            <br>
+            <li><a href="#contact">Contact Page</a></li>
+            <br>
+            <li><a href="#review">Review Page</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <br>
+        <h2>Welcome to TechHub </h2>
+        <br>
+        <p><strong>Your Coding Journey Starts Here</strong></p>
+        <br>
+        <p>TechHub is the leading coding community at National Post Graduate College. We empower students to learn,
+            build, and innovate through hands-on projects and collaborative learning. Join us today and transform your
+            passion for technology into real-world skills.</p>
+        <br>
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About TechHub Coding Club</h2>
+            <br>
+            <p>
+                Founded in 2018, TechHub has grown into a vibrant community of over 200 active members. We believe in
+                learning by doing and have successfully organized 50+ workshops, hackathons, and tech talks. Our mission
+                is
+                to bridge the gap between academic learning and industry requirements by providing practical coding
+                experience and mentorship.</p>
+            <br>
+        </div>
+
+        <div>
+            <h3>Our Vision</h3>
+            <br>
+            <p>
+                To create a community where every student, regardless of their background, can explore technology,
+                develop
+                their skills, and build innovative solutions that make a difference.</p>
+            <br>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div>
+            <h2>Get in Touch With Us</h2>
+            <br>
+
+            <p><strong>Have questions or want to join TechHub? We'd love to hear from you! Reach out to us through any
+                    of the channels below.</strong></p>
+            <br>
+        </div>
+
+        <div>
+            <h3>Contact Details</h3>
+            <br>
+
+            <p>Email:techhub@npgc.edu.in</p>
+            <p>Phone: +91-9876543210</p>
+            <p>Office: Room 205, Computer Science Block
+                Timing: Monday to Friday, 10:00 AM - 5:00 PM</p>
+            <br>
+            <h3>Social Media</h3>
+            <br>
+
+            <p>Follow us on Instagram, Twitter, and LinkedIn for daily coding tips and event updates.</p>
+            <br>
+        </div>
+
+    </section>
+
+    <section id="review">
+
+        <h2>What Our Members Say</h2>
+        <br>
+
+        <span><strong>Review 1:</strong></span>
+        <p>"TechHub changed my college experience completely. I learned more practical skills here than in my entire
+            curriculum. The mentorship and project opportunities are incredible!" - Rahul Sharma, BCA 3rd Year</p>
+        <br>
+        <span><strong>Review 2:</strong></span>
+        <p>"Joining TechHub was the best decision I made. I participated in my first hackathon, won a prize, and even
+            got
+            an internship through the club's network!" - Priya Singh, MCA 1st Year"</p>
+        <br>
+        <span><strong>Review 3:</strong></span>
+        <p>"The weekly coding sessions helped me improve my problem-solving skills tremendously. The seniors are super
+            supportive and always ready to help." - Ankit Verma, BCA 2nd Year"</p>
+        <br>
+        <span><strong>Review 4:</strong></span>
+        <p>"TechHub is not just a club, it's a family. I made lifelong friends here and learned skills that will help me
+            throughout my career." - Sneha Patel, MCA 2nd Year"</p>
+
+    </section>
+</body>
+
+</html>
