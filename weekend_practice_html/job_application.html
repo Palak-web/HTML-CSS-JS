@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(154, 154, 154);
+
+            
+        }
+        .box{
+            width: 200;
+            color: white;
+            margin: 100px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">   
+        <div>
+            <h1>Job Application (Web)</h1>
+            <label for="text">First Name</label>
+            <input type="text" placeholder="Enter First Name..."  autofocus>
+            <label for="text">Last Name</label>
+            <input type="text" placeholder="Enter Last Name..."  autofocus>
+        </div>
+        <div>
+            <label for="email id">Email</label>
+            <input type="email" placeholder="Enter Email...">
+
+            <label for="Job Role">Job Role</label>
+            <select name="Job Role" id="Job">
+                <option value="field"> Select Your Field </option>
+                <option value="backend developer">Backend Developer</option>
+                <option value="frontend developer">Frontend Developer</option>
+                <option value="data analytics">Data Analytics</option>
+                <option value=" AI expert"> AI Expert</option>
+                <option value="web developer">Web Developer</option>
+                <option value="app developer">App Developer</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Enter Address</label>
+            <textarea name="your address" id="address" rows="4" cols="85"></textarea>
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" placeholder="Enter City..." autofocus>
+
+            <label for="Pincode">Pincode</label>
+            <input type="text" pattern="(0-9){6}" maxlength="6" inputmode="numeric" placeholder="Enter Pincode..." autofocus>
+
+        </div>
+        <div>
+            <label for="date">Enter Date</label>
+            <input type="date" title="Select Date" min="2024-01-01" max="2026-12-31">
+
+            <label for="doct">Upload Your CV</label>
+            <input type="file" id="cv" name="cv" accept=".pdf , .png , .docx">
+
+        </div>
+    </div>
+</body>
+</html>
