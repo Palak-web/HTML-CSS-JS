@@ -8,30 +8,61 @@
         *{
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
         body{
             background-color: rgb(154, 154, 154);
-
-            
+            font-family: Arial, Helvetica, sans-serif;
         }
         .box{
-            width: 200;
-            color: white;
-            margin: 100px;
-            padding: 40px;
+            margin:40px auto;
+            padding:30px 20px;
+            width: 700px;
+            height: 900px;
+            border-radius: 6px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            
+
+        }
+        h1{
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+         label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="file"],
+        select,
+
+        textarea{
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: border 0.3s;
         }
     </style>
 </head>
 <body>
     <div class="box">   
-        <div>
+        <div class="about">
             <h1>Job Application (Web)</h1>
             <label for="text">First Name</label>
             <input type="text" placeholder="Enter First Name..."  autofocus>
             <label for="text">Last Name</label>
             <input type="text" placeholder="Enter Last Name..."  autofocus>
         </div>
-        <div>
+        <div class="cont">
             <label for="email id">Email</label>
             <input type="email" placeholder="Enter Email...">
 
@@ -46,11 +77,12 @@
                 <option value="app developer">App Developer</option>
             </select>
         </div>
-        <div>
+
+        <div class="address">
             <label for="address">Enter Address</label>
-            <textarea name="your address" id="address" rows="4" cols="85"></textarea>
+            <textarea name="your address" id="address" rows="4" cols="50"></textarea>
         </div>
-        <div>
+        <div class="city">
             <label for="city">City</label>
             <input type="text" placeholder="Enter City..." autofocus>
 
@@ -58,7 +90,7 @@
             <input type="text" pattern="(0-9){6}" maxlength="6" inputmode="numeric" placeholder="Enter Pincode..." autofocus>
 
         </div>
-        <div>
+        <div class="doct">
             <label for="date">Enter Date</label>
             <input type="date" title="Select Date" min="2024-01-01" max="2026-12-31">
 
