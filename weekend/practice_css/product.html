@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;  /* ✅ Yahan hona chahiye */
+        }
+
+        body {
+            background-color: rgba(173, 215, 243, 0.79);
+            display: flex;  /* ✅ Card ko center karne ke liye */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;  /* ✅ Full screen height */
+        }
+
+        .card {
+            width: 300px;
+            background-color: white;
+            margin: 15px 10px;  /* ✅ Shorthand use kiya */
+            border-radius: 10px;
+            padding: 20px;  /* ✅ Shorthand */
+            border: 2px solid rgb(0, 0, 0);
+            transition: box-shadow 0.3s ease;  /* ✅ Smooth shadow animation */
+        }
+
+        /* ✅ Hover Effect - Shadow */
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            border-radius: 10px;
+            width: 100%;  /* ✅ Card ki puri width le lo */
+            height: 200px;
+            object-fit: cover;  /* ✅ Image crop ho jaaye properly */
+        }
+
+        h2 {
+            margin-bottom: 12px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px auto;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;  /* ✅ Better padding */
+            border-radius: 10px;
+            background-color: #3b82f6;  /* ✅ Proper blue color */
+            color: white;  /* ✅ Text white */
+            font-weight: bold;
+            border: none;  /* ✅ Default border remove */
+            cursor: pointer;  /* ✅ Hand cursor */
+            transition: background-color 0.3s ease;  /* ✅ Smooth color change */
+        }
+
+        /* ✅ Button Hover Effect */
+        button:hover {
+            background-color: #1d4ed8;  /* ✅ Dark blue on hover */
+        }
+
+        /* ✅ Responsive - Mobile */
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;  /* ✅ Mobile pe 90% width */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="image" 
+             src="https://static.vecteezy.com/system/resources/previews/022/255/712/non_2x/beautiful-shoes-generative-ai-free-photo.jpg"
+             alt="Shoe">
+        <h2>Trendy & Modern</h2>
+        <p>Price: ₹500/-</p>
+        <button type="button">Buy The Product</button>  <!-- ✅ type="button" sahi hai -->
+    </div>
+</body>
+
+</html>
