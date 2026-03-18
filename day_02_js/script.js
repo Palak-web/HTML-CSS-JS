@@ -55,3 +55,53 @@ let l = 5;
 let cond1 = k > l;  //true
 let cond2 = a === 5; //true
 console.log("cond1 && cond2 = ", cond1 && cond2);
+
+let m = 6;
+let n = 2;
+console.log("cond1 || cond2 = ", m < n || m === 6);
+console.log("!(6<2) = ", !(a === 6));
+
+// condition statement
+let age = 18;
+
+if (age >= 18){
+    console.log("You can vote");
+}
+if (age < 18){
+    console.log("You cannot vote");
+}
+
+let theme = "dark";
+let color;
+
+if (theme === "dark") {
+    console.log("Black")
+    }
+if (theme === "light"){
+        console.log("White")
+    }
+
+let mode = "silent";
+
+if (mode === "silent") {
+    console.log("silent mode")
+    }
+else {
+        console.log("normal or anothoer mode")
+    }
+
+//else-if statement
+let marks = 100;
+
+if (marks > 50) {
+    console.log("Grade A");
+} else if (marks == 50) {
+    console.log("Grade B");
+} else {
+    console.log("Grade C");
+}
+//turnary operators(cond statement)
+let Age = 19;
+let result = Age >= 18 ? "adult" : "not adult";
+console.log(result);
+
