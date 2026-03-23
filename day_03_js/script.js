@@ -58,3 +58,60 @@ let student = {
 for (let key in student) {
     console.log("key = ", key, "value =", student[key])
 }
+// strings in JS 
+let Str = "ApnaCollege";
+let Str2 = "Mannat";
+
+//template litrals
+let s = `this is a template litral`;
+
+// console.log(typeof specialString);
+let obj = {
+    item: "Book",
+    price: 100,
+};
+let output = `the price of ${obj.item} is ${obj.price} rupees`;
+console.log(output);
+
+let specialString = `you can add expression also ${1+2+3}`;
+console.log(specialString);
+
+//escape character
+console.log("apna\ncollege");
+let tabchar = "hello guys\twhat's up"; //20
+console.log(tabchar.length);
+//str methods
+let college = "National pg college";
+let newcollege = college.toUpperCase();
+console.log(newcollege);
+console.log(college); //in JS strings are immutable
+
+college = college.toLowerCase();
+console.log(college);
+
+let forTrim = "         good Morning everyone      ";
+console.log(forTrim.trim());
+let string = "Apna College";
+
+// slice - returns part of string
+console.log(str.slice(0, 4));    // "Apna"
+console.log(str.slice(5));       // "College"
+console.log(str.slice(-7));      // "College" (negative index)
+
+// concat - joins two strings
+let string1 = "Hello";
+let string2 = " World";
+let result = string1.concat(string2);
+console.log(result);             // "Hello World"
+console.log(string1.concat(" ", "JavaScript", "!")); // multiple concat
+
+// replace - replaces searchVal with newVal
+let msg = "I love Java";
+let newMsg = msg.replace("Java", "JavaScript");
+console.log(newMsg);             // "I love JavaScript"
+
+// charAt - returns char at given index
+let college1 = "Apna College";
+console.log(college1.charAt(0));  // "A"
+console.log(college1.charAt(5));  // "C"
+console.log(college1.charAt(100)); // "" (out of range)
