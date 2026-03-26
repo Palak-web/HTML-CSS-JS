@@ -191,3 +191,105 @@ function dance(v1){
     console.log(`${v1} is dancing`);
 }dance("ghoda");
 dance("bhoot"); 
+
+function add(v1 =0 , v2=0){
+    console.log(v1+ v2);
+
+}
+add(41, 57);
+
+//return in func
+function abcd(v){
+    return 10+v;
+}
+let val = abcd(9);
+console.log(val)
+
+function naamTera(v){
+    return v + " Verma";
+}
+console.log(naamTera("Palak"));
+
+//first class function
+//Higher order function --> ek aisa function jo ki return kare funtion ya fir accept kare ek fnc apne parameter mein
+function Greet(val){  //hof
+    val();
+}
+Greet(function(){
+    console.log("Hello Doston Mera naam hai Doremon")
+})
+
+//pure vs impure fnc
+let no = 12;
+function pure(){
+    console.log("Hello");
+}
+pure();
+function impure(){
+    no++;
+    console.log(no);
+}
+impure();
+
+//closures
+function close(){
+    let a = "happy";
+    return function(){
+        console.log(a," Birthday");
+    }
+}
+const closure = close();
+closure();
+// IIFE
+(function(){
+    console.log("it is a immediate function")
+})();
+
+//Hoasting func
+hoast();
+
+function hoast(){
+    console.log("heyehey")
+}
+
+let multiply = (a, b) => {
+    return a * b;
+};
+function dfg(hell){
+    hell();
+}
+dfg(function(){
+    console.log("simple")
+});
+function bmi(weight, height){
+    return weight / (height*height);
+}
+console.log(bmi(45, 1.7).toFixed(2));
+
+//Higher-Order Function
+function discCal(d){
+    return function(price){
+        return price - price*(d /100);
+    }
+}
+let discounter = discCal(10);
+console.log(discounter(200));
+
+//HOF + CallBack function
+function disc(price,d, callback){
+    return callback(price, d);
+}
+const finalPrice = disc(100, 20 ,function(price,d){
+    return price - price*(d /100);
+});
+console.log(finalPrice);
+function double(val){
+    return val *2;
+}
+console.log(double(9));
+
+(function(){
+    const password = "SECRET PASSWORD";
+    console.log(password);
+})();
+// console.log(password);
