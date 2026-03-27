@@ -293,3 +293,98 @@ console.log(double(9));
     console.log(password);
 })();
 // console.log(password);
+
+//Arrays
+let marks = [10, 20, 30, 40, 99];
+console.log(marks)
+console.log(marks[0])
+marks.push(90);
+console.log(marks);
+marks.pop(90);
+console.log(marks);
+marks.shift();
+console.log(marks);
+marks.splice(2,1);
+console.log(marks);
+let newarr = marks.slice(0,2)
+console.log(newarr);
+//reverse arr
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.reverse());
+
+//sorting of arr
+let arr3 = [11, 67, 54, 55, 33];
+let ar = arr3.sort(function(a, b){  // sort always accepting a function
+    return a-b;       //a - b ascending order & b-a descending order
+});
+//forEach
+console.log(ar);
+arr3.forEach(function(val) {
+    console.log(val +5);
+}); 
+//map
+let newarr1 = arr3.map(function(val){
+    if(val > 50) return val;
+}); console.log(newarr1);
+//filter
+let rownum = [1, 2, 3, 4, 5, 6];
+let newrownum = rownum.filter(function(val){
+    return (val%2 === 0);
+}); console.log(newrownum);
+//reduce
+let ans = rownum.reduce(function(accumulator, val){
+    return accumulator + val;
+}, 0);
+//find
+let rownum1 = [1, 2, 4, 3, 4, 5, 6];
+let answer = rownum1.find(function(vl){
+    return vl === 4;
+}); console.log(answer);
+//some
+let scr = [30, 50, 77, 90, 57];
+let any = scr.find(function(vl){
+    return vl >= 75;
+}); console.log(any);
+//every
+let score = [9, 50, 77, 90, 57];  // return false
+let everyy = score.every(function(vl){
+    return vl > 30;
+});
+//Destructuring, Spreate operator
+let arr4 = [1,4, 5, 6, 7,];
+let [s, u, ,v] = arr4;
+
+
+//Object
+let obj = {
+    name : "Pragya Verma",
+    age: 20,
+    Gender: "F"
+};
+console.log(obj.Gender);
+let aa = "name";
+console.log(obj[aa]);
+
+const user = {
+    name: "Palak Verma",
+    address:{
+        City: "Lucknow",
+        pin: 123321,
+        Locations:{
+            lat:22.4,
+            lng: 77.2,
+        },
+    },
+};     //Nesting
+console.log(user.address.Locations.lat);  //Deep Access
+let {lat,lng} = user.address.Locations;
+console.log(lng);   //Destructuring
+
+let obj2 = {
+    name: "Ram",
+    age: 23,
+    email: "ram22@gmail.com"
+};
+for (let key in obj2){  //Loop in Obj
+    console.log(key, obj2[key]);  //key accessing and also values
+}
