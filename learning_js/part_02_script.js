@@ -51,3 +51,24 @@ console.dir(h12);
 let h4all = document.querySelector("h4");
 h4all.classList.add("abc")  //recommended  way
 h4all.classList.toggle("abc"); //reversing 
+
+//Events and EventHeadling
+let p = document.querySelector("p");
+ function click(){
+    p.style.color = "darkblue";
+};
+p.addEventListener("click",click); 
+// p.removeEventListener("click",click);
+
+let inp = document.querySelector("input");
+inp.addEventListener("input", function(details){
+    if(details.data !== null){
+        console.log("typed",details.data);
+    }
+});
+
+let sel = document.querySelector("select");
+let device = document.querySelector("#device");
+sel.addEventListener("change", function(dets){
+    device.textContent = `${dets.target.value} Device Selected`;
+});
