@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buzzer Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Buzzer Timer</h1>
+    
+    <!-- Input fields -->
+    <label>Delay (seconds):</label>
+    <input type="number" id="delay" value="1" min="1">
+
+    <label>Mode:</label>
+    <select id="mode">
+      <option value="timeout">Timeout (once)</option>
+      <option value="interval">Interval (repeat)</option>
+    </select>
+
+    <label>Repeat Count (for interval):</label>
+    <input type="number" id="repeat" value="3" min="1">
+
+    <button id="startBtn">Start</button>
+
+    <!-- Display -->
+    <div id="status">Waiting...</div>
+
+    <!-- Buzzer sound -->
+    <audio id="buzzer" src="WhatsApp Audio.mpeg" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
