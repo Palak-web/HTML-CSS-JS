@@ -43,4 +43,3 @@ startBtn.addEventListener("click", function () {
     clearInterval(timer)
   }
 })
-console
