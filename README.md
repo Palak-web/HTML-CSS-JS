@@ -4,11 +4,6 @@ A collection of my **web development practice** and mini projects using HTML, CS
 This repo shows my daily learning progress, experiments, and small projects.
 
 ## 📚 Topics Covered
-- Samajh gaya Palak 👌 — tum chahti ho ki README ke **Topics Covered** section me JavaScript ke aur zyada topics add ho jayein taaki complete lage. Chalo ek expanded list bana dete hain:
-
----
-
-### 📚 Topics Covered (Updated)
 - **HTML:** Forms, tables, semantic HTML, portfolio pages  
 - **CSS:** Layouts, flexbox, grid, animations, responsive design  
 - **JavaScript:** Basics, Control flow, Functions, callbacks, Arrays & Objects, DOM manipulation, Event handling ,Form validation & user input handling , ES6+ features
