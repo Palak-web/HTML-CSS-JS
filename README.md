@@ -1,42 +1,66 @@
-# Web Development Practice 🌐
+# HTML-CSS-JS 🌐
 
-Learning HTML, CSS, and JavaScript from **Code with Harry's Sigma Web Development Course**.
+A collection of my **web development practice** and mini projects using HTML, CSS, and JavaScript.  
+This repo shows my daily learning progress, experiments, and small projects.
 
-## 📚 What I'm Learning
+## 📚 Topics Covered
+- Samajh gaya Palak 👌 — tum chahti ho ki README ke **Topics Covered** section me JavaScript ke aur zyada topics add ho jayein taaki complete lage. Chalo ek expanded list bana dete hain:
 
-- **HTML:** Basic tags, forms, tables, semantic HTML
-- **CSS:** Styling, flexbox, grid, animations, responsive design
-- **JavaScript:** DOM manipulation, events, APIs
+---
+
+### 📚 Topics Covered (Updated)
+- **HTML:** Forms, tables, semantic HTML, portfolio pages  
+- **CSS:** Layouts, flexbox, grid, animations, responsive design  
+- **JavaScript:** Basics, Control flow, Functions, callbacks, Arrays & Objects, DOM manipulation, Event handling ,Form validation & user input handling , ES6+ features
+  synchronous / Asynchronous JS, Error handling, LocalStorage & SessionStorage, JSON handling
+
+- **React (basics):** Initial practice and experiments
 
 ## 📁 Folder Structure
-
 html-css-js/
-├── day-01/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── practice.html
+├── day_01_html/, day_02_css/, ... (daily learning exercises)
+├── practice_js/
+│   ├── buzzerTimer
+│   ├── call_app
+│   ├── Cardify (this keyword)
+│   ├── file-upload-ui
+│   ├── form_validation
+│   ├── key-press-display
+│   ├── live_char_counter
+│   ├── mouse_follower
+│   ├── profile-card-generator
+│   └── more JS practice files...
 │
-├── day-02/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── bookmarkmanager.html
+├── weekend_practice_css/
+│   ├── layout_css.html
+│   ├── logo_card.html
+│   ├── product.html
+│   └── more CSS practice files...
+│
+├── weekend_practice_html/
+│   ├── job_application.html
+│   ├── login_registration_contact_page.html
+│   ├── portfolio.html
+│   ├── tables_practice.html
+│   └── more HTML practice files...
+│
+├── react-js/ (React basics)
 └── README.md
 
-
 ## 🎯 Goal
-
-Master web development fundamentals and build projects.
+- Strengthen fundamentals of HTML, CSS, and JavaScript  
+- Build interactive mini projects  
+- Transition towards React and more advance frontend fundamentals
 
 ## 🛠️ Tech Stack
-
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
 
 ---
 
 **Started:** January 2026 | **Status:** 🔥 Active Learning
+
 =======
 # HTML-CSS-JS
