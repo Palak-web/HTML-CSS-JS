@@ -13,13 +13,13 @@ const userManager = {
         e.preventDefault();
         this.addUser();
     },
-
     addUser: function () {
-        if (!username.value || !role.value || !photo.value) {
-            alert("Bhai name, role, photo to daalo");
+        if(!username.value || !role.value || !photo.value) {
+            alert("Bhai naam, role, photo to daal");
             return;
         }
         this.users.push({
+            id: Date.now(), // unique id ke liye
             username: username.value,
             role: role.value,
             bio: bio.value,
@@ -30,8 +30,7 @@ const userManager = {
     },
     renderUi: function () {
         document.querySelector(".users").innerHTML = "";
-        this.users.forEach(function (user) {
-
+        this.users.forEach((user) => {
             const card = document.createElement("div");
             card.classList.add("card");
             card.style.background = "#1e1e28";
@@ -39,6 +38,24 @@ const userManager = {
             card.style.padding = "24px 18px";
             card.style.width = "190px";
             card.style.textAlign = "center";
+            card.style.position = "relative"; // delete btn ke liye
+
+            // Delete Button
+            const deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "×";
+            deleteBtn.style.position = "absolute";
+            deleteBtn.style.top = "8px";
+            deleteBtn.style.right = "8px";
+            deleteBtn.style.background = "#ff4d4d";
+            deleteBtn.style.color = "#fff";
+            deleteBtn.style.border = "none";
+            deleteBtn.style.borderRadius = "50%";
+            deleteBtn.style.width = "22px";
+            deleteBtn.style.height = "22px";
+            deleteBtn.style.cursor = "pointer";
+            deleteBtn.style.fontSize = "16px";
+            deleteBtn.style.lineHeight = "20px";
+            deleteBtn.onclick = () => this.removeUser(user.id);
 
             const img = document.createElement("img");
             img.src = user.photo;
@@ -48,6 +65,7 @@ const userManager = {
             img.style.borderRadius = "50%";
             img.style.objectFit = "cover";
             img.style.marginBottom = "12px";
+            img.onerror = () => img.src = "https://i.pravatar.cc/100";
 
             const name = document.createElement("div");
             name.classList.add("name");
@@ -71,6 +89,7 @@ const userManager = {
             bio.style.color = "#bbb";
             bio.style.lineHeight = "1.5";
 
+            card.appendChild(deleteBtn); // button add kiya
             card.appendChild(img);
             card.appendChild(name);
             card.appendChild(role);
@@ -79,7 +98,10 @@ const userManager = {
             document.querySelector(".users").appendChild(card);
         });
     },
-    removeUser: function () { },
+    removeUser: function (id) {
+        this.users = this.users.filter(user => user.id !== id);
+        this.renderUi();
+    },
 };
 
 userManager.init();
